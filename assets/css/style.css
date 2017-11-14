@@ -93,17 +93,6 @@ nav li + li {
   border-left: 1px solid #ddd;
 }
 
-nav a, nav a:visited  {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav a:focus, nav a:hover, nav a:active {
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #ccc;
-  color: inherit;
-}
-
 .search {
   flex: 1 0 auto;
   padding: 0.5rem 0 0 0;
@@ -113,6 +102,27 @@ nav a:focus, nav a:hover, nav a:active {
 input {
   width: 100%;
 }
+
+/*--- Links ---*/
+
+a, a:visited  {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #222;
+  color: inherit;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  text-shadow: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  text-shadow: none;
+  color: inherit;
+}
+
 /*--- All Panels ---*/
 .child {
   padding: 0 1.5rem;
@@ -164,12 +174,13 @@ aside {
 /*--- Footer ---*/
 
 footer {
-  color: #ddd;
+  color: #bbb;
   background-color: #555;
   grid-area: footer;
   border-top: 3px solid #999;
-  font-size: 0.875rem; /*a little smaller than page default*/
+  font-size: 0.75rem; /*a little smaller than page default*/
   text-align: center;
+  line-height: 2rem;
 }
 
 /*--- Media Queries ---*/
